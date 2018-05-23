@@ -7,11 +7,11 @@ var app = express();
 
 app.use(express.static(publicPath));
 
-app.get('/',(req,res)=>{
-  res.sendFile(publicPath + '/index.html');
-});
+// app.get('/',(req,res)=>{
+//   res.sendFile(publicPath + '/index.html');
+// });
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
   console.log(`Started on port ${port}`);
 });
 
